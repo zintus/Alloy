@@ -1,13 +1,6 @@
 import Foundation
 import Accelerate
 
-/// Typealias of UInt16 for dealing with 16-bit floating point values in Swift.
-///
-/// Since Swift has no datatype for a 16-bit float we use UInt16s instead, which
-/// take up the same amount of memory. (Note: The simd framework does have "half"
-/// types but only for 2, 3, or 4-element vectors, not scalars.)
-public typealias Float16 = UInt16
-
 /// Uses vImage to convert a buffer of float16 values to regular Swift Floats.
 ///
 /// - Parameters:
